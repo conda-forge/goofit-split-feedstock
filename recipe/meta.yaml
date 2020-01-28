@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set name = "goofit" %}
 
 {% set goofit_proc_type = "cpu" if cuda_compiler_version|default("None") == "None" else "gpu" %}
@@ -9,9 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 82884fd3021555da0953776f81199cbea60287f6bca87b0ecdaa5dd212692c67
-  patches:
-    - patches/thrustorder-2.2.2.patch
+  sha256: 7f80e9a8091bc029a92f562539e330587245885329456d8b7783127b6ae7aae8
   
 build:
   skip: true  # [win]
@@ -44,15 +42,16 @@ outputs:
         - {{ compiler("c") }}
         - {{ compiler("cxx") }}
         - {{ compiler("cuda") }}  # [linux and cuda_compiler_version != "None"]
-        - cmake
+        - cmake ==3.15.*
+        - make
         - llvm-openmp  # [osx]
-        - libgomp      # [linux and not aarch64]
+        - libgomp      # [linux and not aarch64 and cuda_compiler_version == "None"]
       host:
         - python
         - scikit-build
         - pip
         - llvm-openmp  # [osx]
-        - libgomp      # [linux and not aarch64]
+        - libgomp      # [linux and not aarch64 and cuda_compiler_version == "None"]
       run:
         - python
         - numpy >=1.11.1
@@ -67,14 +66,14 @@ outputs:
 
     test:
       requires:
-        - pytest  # [not linux or cuda_compiler_version == "None"]
+        - pytest
       source_files:
-        - python/tests/test_exp.py  # [not linux or cuda_compiler_version == "None"]
+        - python/tests/test_exp.py
       imports:
-        - goofit  # [not linux or cuda_compiler_version == "None"]
+        - goofit
       commands:
+        - $PYTHON -m goofit
         - $PYTHON -m pytest python/tests/test_exp.py  # [not linux or cuda_compiler_version == "None"]
-        - $PYTHON -c "import sys, pkgutil; sys.exit(pkgutil.find_loader('goofit') is None)"
 
 about:
   home: https://github.com/GooFit/GooFit
@@ -82,6 +81,20 @@ about:
   license_family: LGPL
   license_file: LICENSE
   summary: A fitting package for GPU and CPU
+  description: |
+    GooFit is split into GPU and CPU versions on Linux. If you want to install for gpus, you can do:
+    
+    ```bash
+    conda install goofit goofit-proc=*=gpu
+    ```
+    
+    You can add `cudatoolkit=10.0` or `9.2` if you want a specific toolkit version.
+    
+    The OpenMP CPU version is default, but can be explicitly requested with:
+    
+    ```bash
+    conda install goofit goofit-proc=*=cpu
+    ```
 
 extra:
   recipe-maintainers:

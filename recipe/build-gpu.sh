@@ -6,4 +6,4 @@ export GOOFIT_DEVICE=CUDA
 export GOOFIT_ARCH="3.0;5.0;6.0;7.0+PTX"
 
 rm pyproject.toml || echo "Already removed pyproject file"
-$PYTHON -m pip install --no-deps --ignore-installed -v .
+VERBOSE=1 $PYTHON -m pip install --no-deps --ignore-installed -v .

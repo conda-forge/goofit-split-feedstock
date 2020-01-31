@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set name = "goofit" %}
 
 {% set goofit_proc_type = "cpu" if cuda_compiler_version|default("None") == "None" else "gpu" %}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 82884fd3021555da0953776f81199cbea60287f6bca87b0ecdaa5dd212692c67
+  sha256: 7f80e9a8091bc029a92f562539e330587245885329456d8b7783127b6ae7aae8
   patches:
     - patches/thrustorder-2.2.2.patch
   

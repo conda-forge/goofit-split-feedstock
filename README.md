@@ -9,6 +9,19 @@ Feedstock license: BSD 3-Clause
 
 Summary: A fitting package for GPU and CPU
 
+GooFit is split into GPU and CPU versions on Linux. If you want to install for gpus, you can do:
+
+```bash
+conda install goofit goofit-proc=*=gpu
+```
+
+You can add `cudatoolkit=10.0` or `9.2` if you want a specific toolkit version.
+
+The OpenMP CPU version is default, but can be explicitly requested with:
+
+```bash
+conda install goofit goofit-proc=*=cpu
+```
 
 
 Current build status
@@ -50,6 +63,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_cuda_compiler_version10.0python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0python3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_cuda_compiler_version9.2python2.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
@@ -68,6 +88,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_cuda_compiler_version9.2python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2python3.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -92,6 +119,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_cuda_compiler_versionNonepython3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonepython3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_python2.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
@@ -110,6 +144,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8" alt="variant">
                 </a>
               </td>
             </tr>

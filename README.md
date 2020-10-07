@@ -5,7 +5,7 @@ Home: https://github.com/GooFit/GooFit
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/goofit-split-feedstock/blob/master/LICENSE.txt)
 
 Summary: A fitting package for GPU and CPU
 
@@ -42,133 +42,93 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_cuda_compiler_version10.0python2.7</td>
+              <td>linux_64_cuda_compiler_version10.0python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0python2.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.0python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version10.0python3.6</td>
+              <td>linux_64_cuda_compiler_version10.0python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.0python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version10.0python3.7</td>
+              <td>linux_64_cuda_compiler_version10.0python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.0python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version10.0python3.8</td>
+              <td>linux_64_cuda_compiler_version9.2python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version9.2python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version9.2python2.7</td>
+              <td>linux_64_cuda_compiler_version9.2python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2python2.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version9.2python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version9.2python3.6</td>
+              <td>linux_64_cuda_compiler_version9.2python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2python3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version9.2python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version9.2python3.7</td>
+              <td>linux_64_cuda_compiler_versionNonepython3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2python3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonepython3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version9.2python3.8</td>
+              <td>linux_64_cuda_compiler_versionNonepython3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonepython3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_versionNonepython2.7</td>
+              <td>linux_64_cuda_compiler_versionNonepython3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonepython2.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonepython3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_versionNonepython3.6</td>
+              <td>osx_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonepython3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_versionNonepython3.7</td>
+              <td>osx_64_python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonepython3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_versionNonepython3.8</td>
+              <td>osx_64_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonepython3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python2.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_python2.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8944&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/goofit-split-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>
-      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>

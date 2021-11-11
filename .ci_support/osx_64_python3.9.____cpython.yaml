@@ -5,7 +5,7 @@ c_compiler:
 c_compiler_version:
 - '11'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cuda_compiler_version:
@@ -13,6 +13,8 @@ cuda_compiler_version:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
+- '11'
+llvm_openmp:
 - '11'
 macos_machine:
 - x86_64-apple-darwin13.4.0

@@ -16,13 +16,13 @@ build:
   {% if cuda_compiler_version|default("None") not in goofit_cuda_supported %}
   skip: true
   {% endif %}
-  number: 4
+  number: 5
 
 outputs:
   - name: goofit-proc
     version: "1.0.0"
     build:
-      number: 4
+      number: 5
       string: "{{ goofit_proc_type }}"
     test:
       commands:
@@ -36,7 +36,7 @@ outputs:
   - name: goofit
     version: {{ version }}
     build:
-      number: 5
+      number: 6
     requirements:
       build:
         - {{ compiler("c") }}

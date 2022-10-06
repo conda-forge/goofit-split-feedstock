@@ -1,4 +1,4 @@
-{% set version = "2.2.3" %}
+{% set version = "2.3.0" %}
 {% set name = "goofit" %}
 
 {% set goofit_proc_type = "cpu" if cuda_compiler_version|default("None") == "None" else "gpu" %}
@@ -9,21 +9,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f80e9a8091bc029a92f562539e330587245885329456d8b7783127b6ae7aae8
-  
+  sha256: b27a7f62f9fecedcab95f8c06d51c11a73a3ebfdb3b5827a173a73198f223633
+
 build:
   skip: true  # [win]
   {% if cuda_compiler_version|default("None") not in goofit_cuda_supported %}
   skip: true
   {% endif %}
-  number: 5
+  number: 0
 
 outputs:
   - name: goofit-proc
-    version: "1.0.0"
+    version: 1.0.0
     build:
-      number: 5
-      string: "{{ goofit_proc_type }}"
+      number: 0
+      string: {{ goofit_proc_type }}
     test:
       commands:
         - exit 0
@@ -36,7 +36,7 @@ outputs:
   - name: goofit
     version: {{ version }}
     build:
-      number: 6
+      number: 0
     requirements:
       build:
         - {{ compiler("c") }}
@@ -83,15 +83,15 @@ about:
   summary: A fitting package for GPU and CPU
   description: |
     GooFit is split into GPU and CPU versions on Linux. If you want to install for gpus, you can do:
-    
+
     ```bash
     conda install goofit goofit-proc=*=gpu
     ```
-    
+
     You can add `cudatoolkit=10.0` or `9.2` if you want a specific toolkit version.
-    
+
     The OpenMP CPU version is default, but can be explicitly requested with:
-    
+
     ```bash
     conda install goofit goofit-proc=*=cpu
     ```

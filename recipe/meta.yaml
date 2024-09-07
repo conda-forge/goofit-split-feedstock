@@ -16,13 +16,13 @@ build:
   {% if cuda_compiler_version|default("None") not in goofit_cuda_supported %}
   skip: true
   {% endif %}
-  number: 2
+  number: 3
 
 outputs:
   - name: goofit-proc
     version: 1.0.0
     build:
-      number: 2
+      number: 3
       string: {{ goofit_proc_type }}
     test:
       commands:
@@ -36,10 +36,11 @@ outputs:
   - name: goofit
     version: {{ version }}
     build:
-      number: 2
+      number: 3
     requirements:
       build:
         - {{ compiler("c") }}
+        - {{ stdlib("c") }}
         - {{ compiler("cxx") }}
         - {{ compiler("cuda") }}  # [linux and cuda_compiler_version != "None"]
         - cmake ==3.15.*
@@ -59,7 +60,6 @@ outputs:
         - libgomp      # [linux and not aarch64]
       run_constrained:
         - goofit-proc * {{ goofit_proc_type }}
-        - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
 
     script: build-cpu.sh  # [not linux or cuda_compiler_version == "None"]
     script: build-gpu.sh  # [linux and cuda_compiler_version != "None"]
